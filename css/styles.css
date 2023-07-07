@@ -1,38 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
+#Hero1{
+    background-image: url("../images/bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-body{
-
+#Hero1logoName{
+    margin-top: 5rem;
 }
 
-.header{
-
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu{
-
-}
-
-.menu ul{
-    list-style: none;
-    display: flex;
-    width: 489px;
-    justify-content: space-between;
-}
-
-.menu-item a{
-    text-decoration: none;
+#Hero1button{
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    margin-bottom: 5rem;
 }
