@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-<!--  <head><script src="../assets/js/color-modes.js"></script>-->
-
+<head>
+<!--  <script src="../assets/js/color-modes.js"></script>-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
@@ -117,27 +117,7 @@
     <nav class="navbar navbar-expand-md bg-transparent fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img id="logoimg" src="images/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+
         </div>
     </nav>
 
@@ -147,7 +127,7 @@
     <!--Centered Hero-->
     <div class="px-4 py-5 text-center text-white" id="Hero1">
         <!--    <img class="d-block mx-auto mb-4" src="images/calculator.svg" alt="" width="72" height="57">-->
-        <h1 class="display-4 fw-normal text-white" id="Hero1logoName">ROR-tool</h1>
+        <h1 class="display-4 fw-normal text-white mt5rem">ROR-tool</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead fw-normal my-3">Raster Object Recognition tool</p>
             <p class="lead mb-4">Transforming Automation for Optimal Efficiency</p>
@@ -162,10 +142,14 @@
         <!--    <img class="d-block mx-auto mb-4" src="images/calculator.svg" alt="" width="72" height="57">-->
         <h1 class="display-4 fw-light text-center my-5" id="Hero1logoName">Explore our product thoroughly</h1>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="900" height="500" class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/wewR0yuamdc" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+            <video width="900" height="500" controls poster="images/video-poster.png">
+                <source src="video/video720p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+<!--            <iframe width="900" height="500" class="embed-responsive-item"-->
+<!--                    src="https://www.youtube.com/embed/wewR0yuamdc" title="YouTube video player" frameborder="0"-->
+<!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+<!--                    allowfullscreen></iframe>-->
         </div>
     </div>
     <!--    featurettes-->
@@ -246,7 +230,7 @@
                         <div class="invalid-feedback">
                             Please enter a valid email address for shipping updates.
                         </div>
-                        <label for="message" class="form-label">Сообщение</label>
+                        <label for="message" class="form-label">Message</label>
                         <textarea name="message" rows="3" id="message" class="form-control" placeholder="" required></textarea>
                         <div class="invalid-feedback">
                             Please enter your shipping address.
