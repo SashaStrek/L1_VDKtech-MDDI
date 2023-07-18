@@ -1,1 +1,7 @@
-.idea\
+.node_modules/
+.src/
+gulpfile.js
+index.html
+Mailer_v1.zip
+package.json
+package-lock.json
