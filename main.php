@@ -42,7 +42,7 @@ if (isset($_POST["send"])) {
     "
     <script>
     alert('Sent succesfully');
-    document.location.href = '/L1_VDKtech-MDDI/index.min.html';
+    document.location.href = 'index.min.html';
     </script>
     ";
 }
