@@ -11,16 +11,16 @@ if (isset($_POST["send"])) {
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->Host = 'smtp.beget.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-    $mail->Username = '';                     //SMTP username
+    $mail->Username = 'admin@rortool.com';                     //SMTP username
     $mail->Password = '';                               //SMTP password
     $mail->SMTPSecure = 'ssl'; //PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('ryjiy.strij@gmail.com');
-    $mail->addAddress('alex.strek.g@gmail.com');
+    $mail->setFrom('admin@rortool.com');
+    $mail->addAddress('alexeykozhakin@gmail.com');
 
     //Attachments
 //    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
@@ -42,7 +42,7 @@ if (isset($_POST["send"])) {
     "
     <script>
     alert('Sent succesfully');
-    document.location.href = 'index.html';
+    document.location.href = '/L1_VDKtech-MDDI/index.min.html';
     </script>
     ";
 }
